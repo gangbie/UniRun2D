@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour {
    private void OnTriggerEnter2D(Collider2D other) 
    {
         // 트리거 콜라이더를 가진 장애물과의 충돌을 감지
-        if (other.tag == "Dead" && isDead)
+        if (other.tag == "Dead")
         {
             Die();
         }
